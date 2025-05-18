@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.header h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.header p {
+    font-size: 1rem;
+    margin: 3px;
+
+}
+
+.containt {
+    width:auto;
+    text-align: center;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, 1fr);
+}
+
+.item {
+    border: 1px solid rgb(59, 58, 58);
+    min-width: 200px;
+    margin: 3px 8px;
+    padding: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 6px;
+}
+
+.item p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.footer{
+    /* border-top: 1px solid black; */
+    width: 100%;
+    text-align: center;
+    padding: 9px 20px;
+}
+.footer p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+@media (min-width:550px) {
+    .containt {
+    text-align: center;
+    margin: 5px 30px;
+    height: max-content;
+    display: grid;
+    row-gap: 25px;
+    grid-template-columns: repeat(auto-fill, 1fr);
+}
+    .item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+@media(min-width:768px) {
+    .containt {
+        margin: 5px 40px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+@media(min-width:1024px) {
+    .containt {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
